@@ -1,0 +1,10 @@
+<h1>Products</h1>
+
+<ul>
+  <% @products.each do|product|%>
+  <li>
+  Name:<%= product.name%>-price:<%=product.price%>-<%= product.quantity%>
+</li>
+<%end%>
+</ul>
+<%= link_to 'Back',root_path %>
